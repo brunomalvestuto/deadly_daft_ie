@@ -4,18 +4,13 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `deadly_daft_ie` to your list of dependencies in `mix.exs`:
+Get a rss feed url from search on daft.ie, then edit config/config.ex to include it
 
 ```elixir
-def deps do
-  [
-    {:deadly_daft_ie, "~> 0.1.0"}
-  ]
-end
-```
+config :deadly_daft_ie, rss_url: "http://www.daft.ie/rss.daft?uid=__&id=__&xk=__"
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/deadly_daft_ie](https://hexdocs.pm/deadly_daft_ie).
+Try it with:
+```
+mix run -e 'DeadlyDaftIe.Property.recently_published() |> Enum.join("\n") |> IO.puts'
+```
 

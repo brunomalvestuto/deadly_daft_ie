@@ -9,7 +9,7 @@ use Mix.Config
 # 3rd-party users, it should be done in your "mix.exs" file.
 
 # You gonna need an account to consume daft's feed
-config :deadly_daft_ie, rss_url: "http://www.daft.ie/rss.daft?uid=__&id=__&xk=__"
+# config :deadly_daft_ie, rss_url: "http://www.daft.ie/rss.daft?uid=__&id=__&xk=__"
 
 # You can also configure a 3rd-party app:
 #
